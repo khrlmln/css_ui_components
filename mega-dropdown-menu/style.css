@@ -1,0 +1,117 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-pink: #ce1d35;
+
+  /* width */
+  --max-width: 73.12rem;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  line-height: 1.55;
+  margin-inline: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+a:hover {
+  color: var(--color-pink);
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  background-color: var(--color-black);
+}
+
+.container {
+  width: min(var(--max-width), 100%);
+  margin: auto;
+  height: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container .logo h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.container nav > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Mega Menu Styling */
+.mega-menu {
+  width: 69.37rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  position: absolute;
+  left: 0;
+  top: 3.81rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-out;
+  border-radius: 0.31rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container nav > ul > li:hover .mega-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mega-menu .mega-menu-items {
+  padding: 1rem;
+}
+
+.mega-menu .mega-menu-items li {
+  margin-bottom: 0.35rem;
+}
+
+.mega-menu .mega-menu-items p {
+  margin-bottom: 1rem;
+  color: var(--color-pink);
+}
+
+.mega-menu .mega-menu-items a {
+  font-size: 0.93rem;
+}
