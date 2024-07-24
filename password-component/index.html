@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card--top">
+        <h2>Enter your password</h2>
+        <div class="flex-md">
+          <img
+            class="profile"
+            width="78px"
+            src="./assets/profile.jpg"
+            alt="profile"
+          />
+          <div class="grid-xs">
+            <small>Business Account</small>
+            <p>Sarah Bills</p>
+          </div>
+        </div>
+        <div class="grid-sm">
+          <label for="password">Password</label>
+          <div class="input-wrapper">
+            <img class="lock-icon" src="./assets/lock.svg" alt="" />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="********"
+            />
+            <button class="btn btn--password">
+              <img src="./assets/hidden.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="confirmations">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="signedIn" id="signedIn" />
+            <div class="fake-checkbox"></div>
+            <label for="signedIn">Stay signed in</label>
+          </div>
+          <button class="btn btn--primary">Continue</button>
+        </div>
+      </div>
+      <a href="#">Reset password</a>
+    </div>
+  </body>
+</html>
