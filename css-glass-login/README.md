@@ -2,8 +2,6 @@
 
 This repository contains the code for a login page designed using the Glassmorphism design concept. This project was created as part of a learning exercise to explore and implement Glassmorphic UI elements.
 
-![Glassmorphic Login Page Screenshot](screenshot.png) <!-- Replace with the correct path to your screenshot -->
-
 ## Technologies Used
 
 - HTML
@@ -11,7 +9,7 @@ This repository contains the code for a login page designed using the Glassmorph
 
 ## Screenshot
 
-![Glassmorphic Login Page](./path-to-screenshot.png) <!-- Replace with the correct path to your screenshot -->
+![Glassmorphic Login Page](Screenshot.png)
 
 ## License
 
